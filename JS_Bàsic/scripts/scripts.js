@@ -74,6 +74,10 @@ function calculadora() {
 
   let resultat;
 
+  if ( isNaN(num1) || isNaN(num2)) { // Li diem que si una de les 2 xifres no és un num. llenci l'alert.
+    alert("Siusplau, introdueix dues xifres")
+  } else {
+
   switch (operador) {
     case "+":
       resultat = myFunctionSuma(num1, num2);
@@ -109,4 +113,6 @@ function calculadora() {
   function myFunctionDiv(num1, num2) {
   return num1 / num2;
   }
+
+}
 
