@@ -88,7 +88,7 @@ function crear_map() {
                     contador++;
                 } 
                 if(value == nom_propi[i] && contador > 1){   //Eliminem el valor si es repeteix (en aquest cas la 2a A)
-                    nom_propi.splice(i);
+                    nom_propi.splice(i);  // Tb es pot fer nom_propi.pop(i);
     
                 }              
             }
