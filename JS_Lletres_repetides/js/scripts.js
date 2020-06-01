@@ -10,7 +10,7 @@
 
 
 
-function lletres_consola(){
+function mostrar_lletres(){
 
     var nom_propi = new Array("C", "L", "A", "R", "A");
     var i;
@@ -28,7 +28,7 @@ function lletres_consola(){
 // ● Si trobes un número, mostra per pantalla: ‘Els noms de persones no contenen el número: __’.
 
 
-function buscar_lletres(){
+function buscar_tipus_lletra(){
     var nom_propi = new Array("C", 3, "L", "A", "R", "A"); //Afegim un número per comprovar que la funció va ok
     //var text = ""; (aquesta variable seria útil si fem .innerHTML (comment a baix), per a console.log no ens fa falta.
     var resultat;
@@ -74,10 +74,10 @@ function buscar_lletres(){
 function crear_map() {
 
     var nom_propi = new Array("C", "L", "A", "R", "A");
-    var nova_llista = nom_propi.map(magatzem);
+    var nova_llista = nom_propi.map(comptar_repeticions);
    
 
-    function magatzem(value){
+    function comptar_repeticions(value){
         var i;
         var contador = 0;
         
@@ -88,7 +88,7 @@ function crear_map() {
                     contador++;
                 } 
                 if(value == nom_propi[i] && contador > 1){   //Eliminem el valor si es repeteix (en aquest cas la 2a A)
-                    nom_propi.splice(i);  // Tb es pot fer nom_propi.pop(i);
+                    nom_propi.splice(i); // Tb es pot fer nom_propi.pop(i)
     
                 }              
             }
