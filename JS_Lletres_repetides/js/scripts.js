@@ -8,11 +8,12 @@
 // 
 // ● Fes un bucle que recorri aquest array i mostri per consola cadascuna de les lletres.
 
-
+"use strict"; //Activem "strict mode" per a JS, que afecta a tot l'arxiu .js
 
 function mostrar_lletres(){
 
     var nom_propi = new Array("C", "L", "A", "R", "A");
+    console.log(nom_propi.constructor);  //Aquesta línia no caldria, és només per mostrar per consola que s'ha creat realment un Array
     var i;
 
     for(i = 0; i < nom_propi.length; i++){
@@ -20,6 +21,20 @@ function mostrar_lletres(){
         console.log(result);
     }
 }
+
+/*  FASE_1_feta_amb_forEach_
+ 
+function mostrar_lletres(){
+    var nom_propi = new Array("C", "L", "A", "R", "A");
+    nom_propi.forEach(myFunction);
+
+    function myFunction(item, index) {
+    console.log(index + ":" + item); 
+    }   
+}
+
+*/
+
 
 // FASE 2
 // 
