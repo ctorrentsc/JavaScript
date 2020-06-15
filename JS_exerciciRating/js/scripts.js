@@ -8,14 +8,14 @@
 "use stict"; //Activem "strict mode" per a JS, que afecta a tot l'arxiu .js
 
     var space =  document.getElementById("demo"); //Contenidor d'elements.
-    var space_array = Array.from(document.getElementsByClassName("fire")); // Convertim el contenidor en Array.
+    var space_array = Array.from(document.getElementsByClassName("fire")); // Convertim la llista de símbols en Array.
     console.log(space_array);
   
     // EventsListeners per canvi de color segons sigui mouseover o click. APROFITO LA FUNCIÓ fire_elements() PER ALS 2.
     space.addEventListener("mouseover", fire_elements, false);
     space.addEventListener("click", fire_elements, false); 
-    var value_event = false;  // Boleà que serveix per, si hem fet click, que no s'apliqui la funció que borra la class "newColor"
-        
+    var value_event = false;  // Boleà que serveix per, si hem fet click, que no s'apliqui la funció que borra la class "newColor" en 
+                                // fer mouseout.
     
     function fire_elements(){  // Funció cridada pels AddEventListeners q canvien el color  ---------------------------------------
       var selected = event.target; //Element que ha activat l'event
