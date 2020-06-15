@@ -5,6 +5,7 @@
             // Al premer un símbol, s’han de quedar els colors fixes en aquest i tots els anteriors
             // si es prem en un altre símbol, els colors s’han d’actualitzar correctament. A més, si l’usuari prem fora de la zona dels símbols, s’han de desel·leccionar tots.
 
+"use stict"; //Activem "strict mode" per a JS, que afecta a tot l'arxiu .js
 
     var space =  document.getElementById("demo"); //Contenidor d'elements.
     var space_array = Array.from(document.getElementsByClassName("fire")); // Convertim el contenidor en Array.
