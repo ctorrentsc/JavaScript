@@ -53,7 +53,7 @@
 
         
     document.addEventListener("click", function(){ // Borrem la class en clicar qualsevol lloc del doc diferent dels símbols
-        if(!event.target.matches(".fire")){
+        if(!event.target.matches(".fire")){  // Si no cliquem en elements amb class .fire
             space_array.forEach(function(item, index, arr){
                 item.classList.remove("newColor");
                 value_event = false; // Tornem a canviar el boleà altra vegada pq dp d'aquest clic en qualsevol lloc sí funcioni 

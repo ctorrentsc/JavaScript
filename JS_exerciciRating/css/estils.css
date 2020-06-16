@@ -27,6 +27,7 @@ h1 {
 }
 
 .newColor{
+    transition: 0.8s;
     color: rgb(252, 81, 30);  /* Estil que aplicarem segons necessitem */
 }
 
